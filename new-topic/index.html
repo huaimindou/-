@@ -1,1 +1,145 @@
-new-topic/index.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程评价平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="status-bar">
+                <div class="status-tag">本场已评未结</div>
+            </div>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <div class="avatar-container">
+                        <img src="https://via.placeholder.com/80" alt="乐一妈妈" class="avatar">
+                    </div>
+                    <div class="user-info">
+                        <h2 class="username">乐一妈妈</h2>
+                        <div class="user-tags">
+                            <span class="tag primary">老师2次</span>
+                            <span class="tag secondary">经常看正价课程</span>
+                        </div>
+                        <div class="lesson-info">
+                            <p>停留时长：<span class="highlight">15分钟50秒</span></p>
+                            <p>关注点：年龄适配、课程形式、班级规模、阶段衔接、效果焦虑</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="user-core-info">
+            <h3 class="section-title">用户核心信息总结</h3>
+            <div class="recent-views">
+                <h4>近期关注</h4>
+                <div class="view-tags">
+                    <a href="#" class="view-tag">学而思剑桥英语</a>
+                    <a href="#" class="view-tag">学而思网校英语精选</a>
+                    <span class="view-time">查询间</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-summary">
+            <h3 class="section-title">历史评论总结</h3>
+            <div class="summary-card">
+                <div class="summary-points">
+                    <div class="summary-point">
+                        <div class="point-number">1</div>
+                        <div class="point-content">
+                            <h4 class="point-title">年龄适配</h4>
+                            <p class="point-desc">5岁孩子学两年英语后该上什么级别，担心课程与年龄不匹配</p>
+                        </div>
+                    </div>
+                    <div class="summary-point">
+                        <div class="point-number">2</div>
+                        <div class="point-content">
+                            <h4 class="point-title">课程形式</h4>
+                            <p class="point-desc">纠结选直播课还是录播课，关心教学互动性和便利性</p>
+                        </div>
+                    </div>
+                    <div class="summary-point">
+                        <div class="point-number">3</div>
+                        <div class="point-content">
+                            <h4 class="point-title">班级规模</h4>
+                            <p class="point-desc">想知道具体班级人数，判断老师能否关注到自家孩子</p>
+                        </div>
+                    </div>
+                    <div class="summary-point">
+                        <div class="point-number">4</div>
+                        <div class="point-content">
+                            <h4 class="point-title">阶段衔接</h4>
+                            <p class="point-desc">学两年后是否该升预备级，怕课程体系断层影响效果</p>
+                        </div>
+                    </div>
+                    <div class="summary-point">
+                        <div class="point-number">5</div>
+                        <div class="point-content">
+                            <h4 class="point-title">效果焦虑</h4>
+                            <p class="point-desc">高价课担心学完没效果，特别关注课程能否持续提升</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="current">本场评论</button>
+                <button class="tab-btn" data-tab="history">历史评论</button>
+            </div>
+            
+            <div class="tab-content" id="current-tab">
+                <div class="comment-card">
+                    <div class="comment-header">
+                        <span class="comment-tag">5岁</span>
+                    </div>
+                    <div class="comment-body">
+                        <p>学了两两年年的英语 想上上预备级</p>
+                    </div>
+                    <div class="comment-footer">
+                        <span class="like-count">0</span>
+                    </div>
+                </div>
+                
+                <div class="comment-card">
+                    <div class="comment-body">
+                        <p>中国直播课还是录播课</p>
+                    </div>
+                    <div class="comment-footer">
+                        <span class="like-count">几个人一班</span>
+                    </div>
+                </div>
+                
+                <div class="comment-card">
+                    <div class="comment-footer">
+                        <span class="like-count">1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="history-tab">
+                <div class="comment-card">
+                    <div class="comment-header">
+                        <span class="comment-tag">5岁能学吗</span>
+                    </div>
+                    <div class="comment-body">
+                        <p>历史评论内容示例</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="history-summary-footer">
+            <h3 class="section-title">历史评论信息总集</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
