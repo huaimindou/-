@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音视频下载与语音转文本工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>抖音视频下载与语音转文本工具</h1>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h2>上传本地视频文件</h2>
+                <div class="file-input">
+                    <input type="file" id="video-file" accept="video/*" />
+                    <button id="upload-btn">上传视频</button>
+                </div>
+                <div class="example-text">
+                    <p>支持的格式: MP4, AVI, MKV 等</p>
+                </div>
+            </section>
+            
+            <section class="progress-section">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" id="download-progress"></div>
+                    </div>
+                    <p id="progress-text">等待下载...</p>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="video-container">
+                    <h2>视频预览</h2>
+                    <div class="video-player">
+                        <video id="video-player" controls>
+                            <source src="" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <div class="video-controls">
+                        <button id="transcribe-btn" disabled>转换语音为文本</button>
+                    </div>
+                </div>
+                
+                <div class="text-container">
+                    <h2>语音转文本结果</h2>
+                    <div class="text-output">
+                        <textarea id="text-output" readonly placeholder="语音转文本结果将显示在这里..."></textarea>
+                    </div>
+                    <div class="text-controls">
+                        <button id="copy-btn" disabled>复制文本</button>
+                        <button id="save-btn" disabled>保存为文件</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2023 抖音视频下载与语音转文本工具 | 仅供学习和个人使用</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
